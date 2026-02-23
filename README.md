@@ -34,15 +34,15 @@ pip install -r requirements.txt
 3) Configure environment variables
 
 Copy the example file and edit it:
-
+```
 cp .env.example .env
-
+```
 Export variables (one simple way):
-
+```
 set -a
 source .env
 set +a
-
+```
 Important:
 
 Never commit .env
@@ -50,12 +50,13 @@ Never commit .env
 Never commit .spotify_cache
 
 4) Run
+```
 python spotify_irc_bot.py
-
+```
 The first run opens a browser to complete Spotify OAuth.
 
 Usage (in IRC)
-
+```
 !devices
 
 !pl discover weekly
@@ -63,14 +64,15 @@ Usage (in IRC)
 !pl spotify:playlist:<id>
 
 !pl https://open.spotify.com/playlist/<id>
-
+```
 Notes
 
 If the bot can’t find your device, start your player (Spotify app / spotatui) and play something once, then retry.
 
 If you change scopes, delete the cache and re-auth:
-
+```
 rm -f .spotify_cache
+```
 Security
 
 Use environment variables for secrets.
@@ -87,16 +89,6 @@ MIT
 ---
 
 ## `LICENSE` (MIT)
-If you want MIT, use the standard MIT license text with your name/year.
+Lorelei Noble 2026
 
 ---
-
-## Before you publish (quick safety checklist)
-- Replace `IRC_SERVER`/`IRC_CHANNEL` in your `.env` locally, not in code.
-- Ensure `.spotify_cache` is ignored and not tracked:
-  ```bash
-  git status --ignored
-
-If you accidentally committed secrets:
-
-rotate Spotify client secret in the dashboard
