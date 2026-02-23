@@ -59,7 +59,7 @@ Usage (in IRC)
 ```
 !devices
 
-!pl discover weekly
+!pl <playlistname>
 
 !pl spotify:playlist:<id>
 
