@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env/secrets
+.env
+.spotify_cache
+*.log
+
+# OS
+.DS_Store
