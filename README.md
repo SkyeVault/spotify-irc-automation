@@ -51,7 +51,7 @@ Never commit .spotify_cache
 
 4) Run
 ```
-python spotify_irc_bot.py
+python spotify-irc-bot.py
 ```
 The first run opens a browser to complete Spotify OAuth.
 
