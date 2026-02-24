@@ -17,7 +17,7 @@ def getenv_required(key: str) -> str:
 
 IRC_SERVER = os.getenv("IRC_SERVER", "irc.example.org")
 IRC_PORT = int(os.getenv("IRC_PORT", "6697"))
-IRC_NICK = os.getenv("IRC_NICK", "spotiBot")
+IRC_NICK = os.getenv("IRC_NICK", "yourname-bot")
 IRC_CHANNEL = os.getenv("IRC_CHANNEL", "#music")
 
 SPOTIFY_DEVICE_NAME = os.getenv("SPOTIFY_DEVICE_NAME", "spotatui")
